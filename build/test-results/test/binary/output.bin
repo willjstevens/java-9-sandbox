@@ -1,0 +1,31 @@
+season fruit
+rice
+1
+4
+9
+16
+25
+totalCalories = 1700
+f=1, s=2, t=3
+Predicate result: false
+Predicate result: false
+Predicate result: true
+Predicate result: true
+Predicate result: true
+Predicate result: false
+Predicate result: false
+Predicate result: false
+Predicate result: true
+Predicate result: false
+	Apple{color='red', weight=6}
+	Apple{color='red', weight=12}
+	Apple{color='green', weight=5}
+	 Apple{color='green', weight=15}
+	 Apple{color='green', weight=10}
+	
+	
+	Apple{color='red', weight=12}
+	Apple{color='red', weight=6}
+	 Apple{color='green', weight=15}
+	 Apple{color='green', weight=10}
+	Apple{color='green', weight=5}

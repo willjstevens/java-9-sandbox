@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="chapter_3.Quiz3_7Test" tests="3" skipped="0" failures="0" errors="0" timestamp="2018-02-08T18:59:53" hostname="wstevens.macbook.dc.gap.com" time="0.029">
+  <properties/>
+  <testcase name="itShouldInstantiateTriNum" classname="chapter_3.Quiz3_7Test" time="0.001"/>
+  <testcase name="itShouldTestPredicateFunctions" classname="chapter_3.Quiz3_7Test" time="0.006"/>
+  <testcase name="itShouldTestComparatorsOnLists" classname="chapter_3.Quiz3_7Test" time="0.022"/>
+  <system-out><![CDATA[f=1, s=2, t=3
+Predicate result: false
+Predicate result: false
+Predicate result: true
+Predicate result: true
+Predicate result: true
+Predicate result: false
+Predicate result: false
+Predicate result: false
+Predicate result: true
+Predicate result: false
+Apple{color='red', weight=6}
+Apple{color='red', weight=12}
+Apple{color='green', weight=5}
+Apple{color='green', weight=15}
+Apple{color='green', weight=10}
+
+
+Apple{color='red', weight=12}
+Apple{color='red', weight=6}
+Apple{color='green', weight=15}
+Apple{color='green', weight=10}
+Apple{color='green', weight=5}
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

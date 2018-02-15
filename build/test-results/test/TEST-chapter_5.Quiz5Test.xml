@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="chapter_5.Quiz5Test" tests="4" skipped="0" failures="0" errors="0" timestamp="2018-02-08T18:59:53" hostname="wstevens.macbook.dc.gap.com" time="0.014">
+  <properties/>
+  <testcase name="itShouldTestQuiz1" classname="chapter_5.Quiz5Test" time="0.005"/>
+  <testcase name="itShouldTestQuiz2" classname="chapter_5.Quiz5Test" time="0.005"/>
+  <testcase name="itShouldTestQuiz3" classname="chapter_5.Quiz5Test" time="0.002"/>
+  <testcase name="itShouldPutItIntoPractice" classname="chapter_5.Quiz5Test" time="0.0"/>
+  <system-out><![CDATA[season fruit
+rice
+1
+4
+9
+16
+25
+totalCalories = 1700
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
