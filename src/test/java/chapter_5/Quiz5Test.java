@@ -105,10 +105,51 @@ public class Quiz5Test {
 
 
 //        4.  Return a string of all traders’ names sorted alphabetically.
+
+        System.out.println("\nReturn a string of all traders’ names sorted alphabetically.");
+        String results4 = traders.stream()
+                .sorted(Comparator.comparing(Trader::getName))
+                .map(t -> t.getName())
+                .reduce("", (f, s) -> f + " " + s);
+        System.out.println("\nResult: " + results4);
+
 //        5.  Are any traders based in Milan?
+
+        System.out.println("\nAre any traders based in Milan?");
+        boolean results5 = traders.stream()
+                .anyMatch(t -> t.getCity().equals("Milan"));
+        System.out.println("\nResult: " + results5);
+
+
 //        6.  Print all transactions’ values from the traders living in Cambridge.
+
+        System.out.println("\nPrint all transactions’ values from the traders living in Cambridge.");
+        transactions.stream()
+                .filter(tx -> tx.getTrader().getCity().equals("Cambridge"))
+                .map(t -> t.getValue())
+                .forEach(System.out::println);
+
+
 //        7.  What’s the highest value of all the transactions?
+
+        System.out.println("\nWhat’s the highest value of all the transactions?");
+        int results7 = transactions.stream()
+                .map(t -> t.getValue())
+                .reduce(0, (e, s) -> s > e ? s : e);
+        System.out.println("\nResult 7: " + results7);
+
 //        8.  Find the transaction with the smallest value.
+
+        System.out.println("\nFind the transaction with the smallest value.");
+        int results8 = transactions.stream()
+                .map(Transaction::getValue)
+                .reduce(2000, (e, s) -> s < e ? s : e);
+        System.out.println("\nResult 8: " + results8);
+//        int results8_2 = transactions.stream()
+//                .min(Comparator.comparing(Transaction::getValue)).orElseGet();
+//        System.out.println("\nResult 8 part 2: " + results8_2);
+
+
 
     }
 
