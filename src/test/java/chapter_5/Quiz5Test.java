@@ -53,8 +53,8 @@ public class Quiz5Test {
     public void itShouldTestQuiz3() {
         int totalCalories =
                 generateDishes().stream()
-                    .mapToInt(d -> d.calories)
-                    .reduce(0, (a, b) -> a + b);
+                        .mapToInt(d -> d.calories)
+                        .reduce(0, (a, b) -> a + b);
         System.out.println(String.format("totalCalories = %d", totalCalories));
 
     }
@@ -81,9 +81,9 @@ public class Quiz5Test {
         System.out.println("\nResults for: Find all transactions in the year 2011 and sort them by value (small to high).");
         List<Transaction> results1 =
                 transactions.stream()
-                    .filter(t -> t.getYear() == 2011)
-                    .sorted(Comparator.comparing(Transaction::getValue))
-                    .collect(toList());
+                        .filter(t -> t.getYear() == 2011)
+                        .sorted(Comparator.comparing(Transaction::getValue))
+                        .collect(toList());
         System.out.println(String.format("\nResults of #1: %s", results1));
 
 
@@ -91,9 +91,9 @@ public class Quiz5Test {
 
         System.out.println("\nResults for: What are all the unique cities where the traders work?");
         traders.stream()
-            .map(t -> t.getCity())
-            .distinct()
-            .forEach(System.out::println);
+                .map(t -> t.getCity())
+                .distinct()
+                .forEach(System.out::println);
 
 //        3.  Find all traders from Cambridge and sort them by name.
 
@@ -155,7 +155,7 @@ public class Quiz5Test {
 
     List<Dish> generateDishes() {
         List<Dish> specialMenu = Arrays.asList(new Dish("season fruit", true, 120, Dish.Type.OTHER),
-            new Dish("prawns", false, 300, Dish.Type.FISH),
+                new Dish("prawns", false, 300, Dish.Type.FISH),
                 new Dish("rice", true, 350, Dish.Type.OTHER),
                 new Dish("chicken", false, 400, Dish.Type.MEAT),
                 new Dish("french fries", true, 530, Dish.Type.OTHER));
